@@ -1,0 +1,17 @@
+{
+  "name": "demo1",
+  "version": "1.0.0",
+  "main": "agent/index.js",
+  "scripts": {
+    "build": "frida-compile index.js -o _agent.js -c",
+    "watch": "frida-compile index.js -o _agent.js -w"
+  },
+  "devDependencies": {
+    "@types/frida-gum": "^17.2.0",
+    "@types/node": "^16.11.12",
+    "frida-compile": "^10.2.5"
+  },
+  "dependencies": {
+    "source-map": "^0.7.4"
+  }
+}
